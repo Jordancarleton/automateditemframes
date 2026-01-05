@@ -1,0 +1,32 @@
+{
+	"schemaVersion": 1,
+	"id": "automated-item-frames",
+	"version": "${version}",
+	"name": "Automated Item Frames",
+	"description": "Set the item frame item to the most common item on a chest/barrel (automatically)",
+	"authors": [
+		"FsmDev"
+	],
+	"contact": {
+		"homepage": "https://fsmdev.net/",
+		"sources": "https://github.com/fsmdev-net/automated-item-frames"
+	},
+	"license": "CC0-1.0",
+        "environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.fsmdev.automateditemframes.AutomatedItemFrames"
+		]
+	},
+	"mixins": [
+		"automated-item-frames.mixins.json"
+	],
+	"depends": {
+                "fabricloader": ">=0.18.4",
+                "minecraft": "~1.21.10",
+                "java": ">=21"
+        },
+	"suggests": {
+		"another-mod": "*"
+	}
+}
